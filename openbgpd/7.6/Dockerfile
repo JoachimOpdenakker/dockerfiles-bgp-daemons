@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y \
     m4 \
     unzip \
     byacc \
-    vim
+    vim \
+    net-tools
 
 RUN groupadd _bgpd && \
     useradd -g _bgpd -s /sbin/nologin -d /var/empty -c 'OpenBGPD daemon' _bgpd && \
